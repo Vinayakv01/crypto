@@ -1,15 +1,14 @@
 {
-    "routes": [
-      {
-        "src": "/[^.]+",
-        "dest": "/"
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/api/(.*)",
-        "destination": "http://apiweb.urbandiners.com/api/$1"
-      }
-    ]
-  }
-  
+  "routes": [
+    {
+      "src": "/[^.]+",
+      "dest": "/"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "http://apiweb.urbandiners.com/api/$1"
+    }
+  ]
+}
