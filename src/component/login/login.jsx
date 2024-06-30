@@ -35,7 +35,7 @@ const Login = ({ onClose }) => {
     formData.append('password', password);
 
     try {
-      const response = await axios.post('https://webapi.biscard.in/api/login', formData.toString(), {
+      const response = await axios.post('https://webapi.biscard.in/api/logins', formData.toString(), {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
         }
