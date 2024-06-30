@@ -74,7 +74,7 @@ const Login = ({ onClose }) => {
                     type="text"
                     value={login}
                     onChange={(e) => setLogin(e.target.value)}
-                    className="mt-1 block w-full border-gray-300 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"
+                    className="mt-1 block w-full text-black border-gray-300 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:ring focus:border-blue-500"
                   />
                 </label>
               </div>
