@@ -9,7 +9,7 @@ const TradeForm = ({ symbol }) => {
   const handleTrade = async (tradeType) => {
     try {
       const userId = localStorage.getItem('userId'); // Get userId from localStorage
-      const response = await axios.post(`http://apiweb.urbandiners.com/api/trade/${tradeType}`, {
+      const response = await axios.post(`https://webapi.biscard.in/api/trade/${tradeType}`, {
         userId,
         symbol,
         amount: parseFloat(amount), // Convert amount to float if necessary
