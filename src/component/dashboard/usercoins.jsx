@@ -9,7 +9,7 @@ const UserCoins = () => {
     const fetchUserCoins = async () => {
       try {
         const userId = localStorage.getItem('userId'); // Get userId from localStorage
-        const response = await axios.get(`http://apiweb.urbandiners.com/api/userCoins/${userId}`);
+        const response = await axios.get(`http://localhost:3000/api/userCoins/${userId}`);
         setUserCoins(response.data);
         setLoading(false);
       } catch (error) {
