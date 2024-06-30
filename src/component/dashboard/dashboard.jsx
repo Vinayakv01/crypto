@@ -12,7 +12,7 @@ const Dashboard = () => {
     };
 
     return (
-        <div className="pt-24 bg-[#111826] h-full p-4">
+        <div className="pt-24 bg-[#111826] h-full p-4 font-Montserrat">
             <div className="flex flex-col md:flex-row rounded-3xl bg-[#212939] gap-4">
                 <div className="w-full md:w-1/4 p-10 mt-3">
                     <CryptoData onCoinSelect={handleCoinSelect} />
