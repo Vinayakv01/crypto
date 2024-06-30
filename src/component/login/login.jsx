@@ -35,7 +35,7 @@ const Login = ({ onClose }) => {
     formData.append('password', password);
 
     try {
-      const response = await axios.post('https://cryptoapi-mdxc.onrender.com/api/logins', formData.toString(), {
+      const response = await axios.post('https://cryptoapi-mdxc.onrender.com/api/login', formData.toString(), {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
         }
