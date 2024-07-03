@@ -57,7 +57,7 @@ const TradingApp = () => {
                         </div>
 
 
-                        <div className="w-1/3 lg:w-full md:pt-4 mt-4 lg:mt-0">
+                        <div className="lg:w-full md:pt-4 mt-2 lg:mt-0">
                             {/* Additional content for larger screens */}
                             <div className="bg-white rounded-lg p-4">
                                 <h3 className="text-lg font-semibold mb-4">Market Overview</h3>
