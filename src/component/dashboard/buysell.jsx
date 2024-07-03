@@ -28,12 +28,12 @@ const TradeForm = ({ symbol }) => {
   };
 
   return (
-    <div className="bg-gray-800 rounded-3xl p-6 shadow-md">
-      <h2 className="text-xl mb-4 text-white">Trade {symbol}</h2>
+    <div className="md:bg-[rgba(0,0,0,0.3)] backdrop-blur-lg rounded-3xl p-6 md;shadow-md">
+      <h2 className="text-xl mb-4 text-black hidden md:block">Trade {symbol}</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label className="block text-white">
-            Amount:
+          <label className="block text-black">
+            Quantity:
             <input
               type="number"
               value={amount}
@@ -43,17 +43,17 @@ const TradeForm = ({ symbol }) => {
             />
           </label>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center gap-3 md:gap-0">
           <button
             type="button"
-            className="bg-green-500 text-white w-full px-4 py-2 rounded-l-xl hover:bg-green-600 focus:outline-none"
+            className="bg-green-500 text-white w-full px-4 py-2 rounded-xl md:rounded-l-xl hover:bg-green-600 focus:outline-none"
             onClick={() => handleTrade('buy')}
           >
             Buy
           </button>
           <button
             type="button"
-            className="bg-red-500 text-white w-full px-4 py-2 rounded-r-xl hover:bg-red-600 focus:outline-none"
+            className="bg-red-500 text-white w-full px-4 py-2 rounded-xl md:rounded-r-xl hover:bg-red-600 focus:outline-none"
             onClick={() => handleTrade('sell')}
           >
             Sell

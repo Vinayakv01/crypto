@@ -25,7 +25,7 @@ const UserCoins = () => {
   }
 
   return (
-    <div className="bg-gray-800 rounded-3xl p-6 shadow-md h-[215px] overflow-y-auto">
+    <div className="bg-[rgba(0,0,0,0.3)] backdrop-blur-lg rounded-3xl p-6 shadow-md h-[215px] overflow-y-auto">
         <style>
               {`
             .overflow-y-auto::-webkit-scrollbar {
@@ -33,9 +33,9 @@ const UserCoins = () => {
             }
             `}
               </style>
-      <h2 className="text-xl mb-4 text-white">Your Coins</h2>
+      <h2 className="text-xl mb-4 text-black">Your Coins</h2>
       {userCoins.length === 0 ? (
-        <p className="text-white">You don't have any coins yet.</p>
+        <p className="text-black">You don't have any coins yet.</p>
       ) : (
         <ul className="divide-y divide-gray-700">
           {userCoins.map((coin, index) => (

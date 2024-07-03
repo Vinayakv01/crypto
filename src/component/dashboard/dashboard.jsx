@@ -12,28 +12,24 @@ const Dashboard = () => {
     };
 
     return (
-        <div className="pt-24 bg-[#111826] h-full p-4 font-Montserrat">
-            <div className="flex flex-col md:flex-row rounded-3xl bg-[#212939] gap-4">
-                <div className="w-full md:w-1/4 p-10 mt-3">
+        <div className="pt-28 h-full p-4 font-Montserrat">
+            <div className="flex flex-col-reverse md:flex-row rounded-3xl gap-4">
+                <div className="w-full md:w-1/4 mt-3 hidden md:block">
                     <CryptoData onCoinSelect={handleCoinSelect} />
                 </div>
-                <div className="w-full md:w-3/4 p-8">
+                <div className="w-full md:w-3/4">
                     <TradingViewWidget symbol={selectedCoin} />
-
                 </div>
-
             </div>
 
-
-            <div className="mt-4 flex flex-row space-x-4">
-                <div className="w-1/2 ">
+            <div className="mt-4 flex flex-col-reverse md:flex-row md:space-x-4">
+                <div className="md:w-1/2">
                     <UserCoins />
                 </div>
-                <div className="w-1/2">
+                <div className="md:w-1/2">
                     <TradeForm symbol={selectedCoin} />
                 </div>
             </div>
-
         </div>
     );
 };

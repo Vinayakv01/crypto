@@ -34,7 +34,7 @@ const CryptoData = ({ onCoinSelect }) => {
         <div
           key={coin.id}
           onClick={() => onCoinSelect(coin.symbol.toUpperCase() + 'USD')}
-          className="flex items-center gap-4 cursor-pointer text-white hover:text-black hover:bg-gray-400 p-2 rounded-lg"
+          className="flex items-center gap-4 cursor-pointer text-black hover:bg-gray-600 hover:text-white p-2 rounded-lg"
         >
           <img src={logos[coin.id]} alt={`${coin.name} logo`} className="w-8 h-8" />
           <div>
