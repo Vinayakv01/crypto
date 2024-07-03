@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Layout from '../component/layout/layout';
 import Home from '../component/home/home';
 import Dashboard from '../component/dashboard/dashboard';
-
+import TradingApp from  "../component/dashboard/trade";
 const Routing = () => {
   const isLoggedIn = localStorage.getItem('authToken') ? true : false;
 
@@ -11,6 +11,8 @@ const Routing = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
+        <Route path="contact" element={<TradingApp />} />
+
         {isLoggedIn ? (
           <Route key="dashboard" path="dashboard" element={<Dashboard />} />
         ) : (
