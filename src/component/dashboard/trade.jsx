@@ -3,7 +3,7 @@ import React from 'react';
 const TradingApp = () => {
     return (
         <div className="bg-gray-100 pt-20 md:pt-10 min-h-screen">
-            <div className=" mx-auto px-4 sm:px-6 lg:px-8">
+            <div className=" mx-auto mb-4 px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <header className="flex justify-between items-center py-4">
                     <div className="w-8 h-8 bg-orange-500 rounded-full"></div>
@@ -57,7 +57,7 @@ const TradingApp = () => {
                         </div>
 
 
-                        <div className="lg:w-full md:pt-4 mb-24 md:mb-0 mt-2 lg:mt-0">
+                        <div className="lg:w-full md:pt-4 mb-20 md:mb-0 mt-2 lg:mt-0">
                             {/* Additional content for larger screens */}
                             <div className="bg-white rounded-lg p-4">
                                 <h3 className="text-lg font-semibold mb-4">Market Overview</h3>
@@ -68,7 +68,7 @@ const TradingApp = () => {
                 </div>
 
                 {/* Bottom Navigation */}
-                <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 lg:hidden">
+                <div className="fixed  bottom-0 left-0 right-0 bg-white border-t border-gray-200 lg:hidden">
                     <div className="flex justify-between px-4 py-2">
                         {['Markets', 'Position', 'Discover', 'Profile'].map((item, index) => (
                             <div key={index} className="flex flex-col items-center">
