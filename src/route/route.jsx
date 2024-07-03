@@ -11,7 +11,7 @@ const Routing = () => {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="contact" element={<TradingApp />} />
+        <Route path="forexdash" element={<TradingApp />} />
 
         {isLoggedIn ? (
           <Route key="dashboard" path="dashboard" element={<Dashboard />} />
